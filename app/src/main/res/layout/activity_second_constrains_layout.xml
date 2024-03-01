@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstrainsLayout"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="32dp"
+        android:width="221dp"
+        android:height="50dp"
+        android:text="Nhập thông tin cá nhân"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="9dp"
+        android:hint="Nhập Họ và Tên"
+        android:padding="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="13dp"
+        android:hint="Nhập Email"
+        android:inputType="textWebEmailAddress"
+        android:padding="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt1" />
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="13dp"
+        android:hint="Nhập Số Điện Thoại"
+        android:padding="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt2" />
+
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="13dp"
+        android:hint="Nhập Tên Công Ty"
+        android:padding="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt3" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Đăng Ký"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="67dp"
+        android:text="Yêu cầu: \nSố điện thoại và email phải hợp lệ. Mật khẩu tối thiểu là 8 ký tự"
+        android:textColor="#E31111"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

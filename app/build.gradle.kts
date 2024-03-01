@@ -18,6 +18,10 @@ android {
     }
 
     buildTypes {
+        debug {
+            
+        }
+
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -32,6 +36,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    buildFeatures{
+        viewBinding = true
     }
 }
 

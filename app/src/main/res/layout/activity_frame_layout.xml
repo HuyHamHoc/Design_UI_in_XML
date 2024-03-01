@@ -7,18 +7,20 @@
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <View
-        android:background="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="500dp"/>
+    <!-- HIỂN THỊ CÁC VIEW CHỒNG LÊN NHAU -->
 
     <View
-        android:background="#03Abcd"
         android:layout_width="wrap_content"
-        android:layout_height="350dp"/>
+        android:layout_height="500dp"
+        android:background="@color/black" />
 
     <View
-        android:background="#2FCD03"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"/>
+        android:layout_height="350dp"
+        android:background="#03Abcd" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="#2FCD03" />
 </FrameLayout>
